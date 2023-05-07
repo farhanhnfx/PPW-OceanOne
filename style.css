@@ -1,0 +1,306 @@
+body {
+    /* padding: 0 10px; */
+    margin: 0;
+    /* font-size: 100%; */
+}
+.logo {
+    padding: 10px 50px 10px 0;
+}
+@font-face {
+    font-family: oswald;
+    src: url(assets/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(assets/Poppins-Regular.ttf);
+}
+#font-oswald {
+    font-family: oswald;
+}
+#webtitle {
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: oswald;
+}
+nav.menus {
+    float: right;
+    position: sticky;
+    top: 0;
+}
+/* nav.menus ul {
+    margin: 0;
+    padding: 0;
+} */
+.navigation {
+    background-color: #1768ac;
+    color: #fff;
+    padding: 0 50px;
+}
+nav ul.navbar-nav {
+    /* margin: -15px; */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+nav ul.navbar-nav li {
+    display: inline-block;
+    list-style: none;
+}
+nav ul.navbar-nav li a {
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul.navbar-nav li a:hover, nav ul.navbar-nav li a:focus {
+    text-decoration: none;
+    background-color: #fff;
+    color: #03256c;
+}
+.first-section {
+    background-image: url(assets/neom-pyThxd4x8Tk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20% 30%;
+    margin: 0;
+    /* text-align: center; */
+    color: #fff;
+    /* height: 100vh; */
+    /* overflow: visible; */
+}
+.first-section p {
+    text-align: center;
+    margin: auto 0;
+    font-family: poppins;
+}
+.first-section h1 {
+    color: #03256c;
+    font-weight: bolder;
+    text-align: center;
+}
+button.normal-button {
+    /* position: absolute; */
+    padding: 10px 15px;
+    margin: 15px auto;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    background-color: #2541b2;
+    /* color: #06bee1; */
+    color: #fff;
+}
+button.normal-button:hover {
+    border: 1px solid #1768ac;
+    padding: 9px 14px;
+    background-color: #fff;
+    color: #1768ac;
+}
+.content-wrapper {
+    padding: 50px 100px;
+    /* background-color: #06bee1; */
+    /* background-color: #1768ac; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.second-section {
+    background-color: #03256c;
+    color: #fff;
+    /* height: 100vh; */
+}
+.second-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.second-section-content {
+    /* border: 10px solid black; */
+    max-width: 350px;
+    text-align: justify;
+    margin: 10px;
+    font-family: poppins;
+    font-size: 14.5px;
+    /* padding: 10px; */
+}
+.second-section-content p {
+    min-height: 95px;
+    max-height: 120px;
+}
+.second-section h3 {
+    font-weight: bold;
+    text-align: left;
+    color: #06bee1;
+}
+.section-title {
+    margin-bottom: 30px;
+}
+.third-section {
+    background-image: url(assets/mitch-meyers-YQD1Xljt4xo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    /* padding: 200px 30%; */
+    /* text-align: center; */
+    color: #fff;
+    /* height: 100vh; */
+}
+.third-section-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 100px;
+}
+.third-section .section-title h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+#text-light-blue {
+    color: #06bee1;
+}
+#text-blue {
+    color: #1768ac;
+}
+#text-dark-blue {
+    color: #03256c;
+}
+.third-section-icon {
+    background-color: #03256c;
+    border-radius: 50%;
+    border: 5px solid #1768ac;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    text-align: center;
+}
+.third-section-content {
+    /* border: 5px solid black; */
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 20px 10px 70px;
+    font-size: 21px;
+    font-family: oswald;
+}
+.forth-section {
+    background-color: #03256c;
+    color: #fff;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+    padding: 60px 0 20px;
+}
+.forth-section .title {
+    margin: 15px 100px 15px;
+}
+.forth-section .title h1 {
+    font-weight: bold;
+}
+.forth-section .content-align-left {
+    /* border: 5px solid red; */
+    text-align: left;
+    margin: 0 15px;
+    font-family: poppins;
+    /* margin: 0 30px 0 15px; */
+    /* max-width: 500px; */
+}
+.forth-section .content-align-right {
+    /* border: 5px solid red; */
+    text-align: right;
+    margin: 0 15px;
+    font-family: poppins;
+    /* margin: 0 15px 0 30px; */
+    /* max-width: 500px; */
+}
+.forth-section .content-align-left h3, .forth-section .content-align-right h3 {
+    font-weight: bold;
+}
+.forth-section .row-wrapper {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+.forth-section .img-wrapper {
+    /* border: 5px solid red; */
+    margin: 0 30px 15px;
+}
+.forth-section .img-wrapper #rounded {
+    border-radius: 40px;
+    border: 5px solid #1768ac;
+}
+.fifth-section {
+    background-color: #fff;
+    height: fit-content;
+    padding: 50px;
+}
+.fifth-section form.form-wrapper {
+    margin-top: 50px;
+    max-width: 300px;
+}
+.fifth-section form.form-wrapper input[type=text],
+.fifth-section form.form-wrapper input[type=email] {
+    width: 320px;
+    margin: 10px;
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: 2px solid #03256c;
+    background-color: #06bce15d;
+}
+::placeholder {
+    color: #03256c;
+}
+.fifth-section form.form-wrapper textarea {
+    width: 320px;
+    height: 120px;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 2px solid #03256c;
+    background-color: #06bce15d;
+    resize: none;
+}
+.fifth-section form.form-wrapper input[type=button].submit-button {
+    margin: 20px 10px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: 2px solid #03256c;
+    background-color: #1768ac;
+    color: #fff;
+}
+.fifth-section form.form-wrapper input[type=button].submit-button:hover {
+    background-color: #03256c;
+    color: #fff;
+}
+#display-google-map img{
+    margin-top: 25px;
+    max-height: none;
+    max-width: none!important;
+    background: none!important;
+}
+footer.footer {
+    background-color: #1768ac;
+    color: #fff;
+    padding: 10px 80px;
+    /* padding-left: 50px; */
+}
+@media screen and (max-width: 800px) {
+    .first-section {
+        color: #03256c;
+    }
+    .first-section p {
+        /* background-image: linear-gradient(#03256c, #fff, #fff);
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent; */
+        background-color: #ffffff50;
+        border-radius: 10px;
+        border: 2px solid #03256c;
+        padding: 5px;
+    }
+}
