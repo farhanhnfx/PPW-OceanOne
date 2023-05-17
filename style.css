@@ -278,15 +278,20 @@ button.normal-button:hover {
     color: #fff;
 }
 .fifth-section #response-output {
-    padding: 30px 0;
+    padding: 40px 0 20px;
     font-family: poppins;
 }
 .fifth-section #response-output h3 {
     color: #03256c;
     font-weight: bold;
+    margin: 20px 0;
 }
 .fifth-section #response-output p {
     margin: 0 20px;
+}
+.fifth-section #response-output table tr td {
+    vertical-align: top;
+    text-align: justify;
 }
 #display-google-map img{
     margin-top: 25px;

@@ -28,15 +28,14 @@ function send_response() {
     var output = document.getElementById('response-output');
     var row = document.createElement("div");
     var col = document.createElement("div");
+    var table = document.createElement("table");
     row.className = "row justify-content-center";
-    col.className = "col-md-10";
+    col.className = "col-md-5";
     output.innerHTML = '<h3 style="text-align: center;">Thanks for your response. Your data recorded as:</h3>';
-    // output.innerHTML += '<p>Nama&emsp;&ensp;&nbsp;: ' + nama;
-    // output.innerHTML += '<p>Email&emsp;&emsp;&nbsp;: ' + email;
-    // output.innerHTML += '<p>Message&ensp;: ' + msg;
-    col.innerHTML += '<p>Nama&emsp;&ensp;&nbsp;: ' + nama;
-    col.innerHTML += '<p>Email&emsp;&emsp;&nbsp;: ' + email;
-    col.innerHTML += '<p>Message&ensp;: ' + msg;
+    table.innerHTML = '<tr><td>Nama</td><td>:&emsp;</td><td> ' + nama + '</td></tr>';
+    table.innerHTML += '<tr><td>Email</td><td>:&emsp;</td><td> ' + email + '</td></tr>';
+    table.innerHTML += '<tr><td>Message&emsp;</td><td>:&emsp;</td><td> ' + msg + '</td></tr>';
+    col.appendChild(table);
     row.appendChild(col);
     output.appendChild(row);
 }
