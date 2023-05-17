@@ -26,8 +26,17 @@ function send_response() {
     var email = document.getElementById('form-email').value;
     var msg = document.getElementById('form-msg').value;
     var output = document.getElementById('response-output');
-    output.innerHTML = '<h3>Thanks for your response. Your data recorded as:</h3>';
-    output.innerHTML += '<p>Nama&emsp;&ensp;&nbsp;: ' + nama;
-    output.innerHTML += '<p>Email&emsp;&emsp;&nbsp;: ' + email;
-    output.innerHTML += '<p>Message&ensp;: ' + msg;
+    var row = document.createElement("div");
+    var col = document.createElement("div");
+    row.className = "row justify-content-center";
+    col.className = "col-md-10";
+    output.innerHTML = '<h3 style="text-align: center;">Thanks for your response. Your data recorded as:</h3>';
+    // output.innerHTML += '<p>Nama&emsp;&ensp;&nbsp;: ' + nama;
+    // output.innerHTML += '<p>Email&emsp;&emsp;&nbsp;: ' + email;
+    // output.innerHTML += '<p>Message&ensp;: ' + msg;
+    col.innerHTML += '<p>Nama&emsp;&ensp;&nbsp;: ' + nama;
+    col.innerHTML += '<p>Email&emsp;&emsp;&nbsp;: ' + email;
+    col.innerHTML += '<p>Message&ensp;: ' + msg;
+    row.appendChild(col);
+    output.appendChild(row);
 }
