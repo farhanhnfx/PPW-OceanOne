@@ -7,6 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Ocean One</title>
+    <script type="text/javascript" src="test.js"></script>
 </head>
 <body>
     <div class="navigation">
@@ -46,7 +47,7 @@
                         that depends on them. It is our responsibility to address this crisis and work towards 
                         innovative solutions to protect our planet's 
                         delicate ecosystems for generations to come.</p>
-                    <button class="normal-button">TAKE ACTION</button>
+                    <button class="normal-button" onclick="alert('Lets take action for our ocean!')">TAKE ACTION</button>
                 </div>
             </div>
         </div>
@@ -67,14 +68,19 @@
                         <!-- 1 -->
                             <div class="second-section-content">
                                 <h3>ALIGN</h3>
-                                <p>66% of people (73% of Millennials) are willing to pay more for products and 
-                                    services from companies committed to positive social and environmental impact.</p>
+                                <p id="s2-align-content">66% of people (73% of Millennials) are willing to pay more for products and 
+                                    services from companies committed to positive social and environmental impact.
+                                </p>
+                                <!-- <textarea rows="0" cols="0"></textarea> -->
                                 <button class="normal-button">LEARN MORE</button>
+                                <a style="color: yellow;" onclick="edit_content()">
+                                    EDIT
+                                </a>
                             </div>
                         <!-- 2 -->
                             <div class="second-section-content">
                                 <h3>KICKSTART</h3>
-                                <p>Ocean One are a turnkey solution to begin the journey of reducing your business’s 
+                                <p id="s2-kickstart-content">Ocean One are a turnkey solution to begin the journey of reducing your business’s 
                                     environmental footprint or going plastic neutral.</p>
                                 <button class="normal-button">START ACTION</button>
                             </div>
@@ -85,6 +91,8 @@
                                     Measure your action success using IMPACT</p>
                                 <button class="normal-button">SEE HOW</button>
                             </div>
+                            <script>
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -97,7 +105,7 @@
             <div class="third-section">
                 <div class="content-wrapper">
                     <div class="section-title">
-                        <h1 id="font-oswald">MAKE <span id="text-light-blue">YOUR</span> <span id="text-dark-blue">IMPACT</span></h1>
+                        <h1 id="font-oswald">MAKE YOUR IMPACT</h1>
                         <!-- <h1 id="font-oswald">MAKE <span id="text-dark-blue">YOUR</span> IMPACT</h1> -->
                     </div>
                     <div class="third-section-wrapper">
@@ -221,12 +229,16 @@
                     </div>
                     <div class="col-md-6 align-self-center d-flex justify-content-start">
                         <form class="form-wrapper">
-                            <input type="text" placeholder="Name"><br>
-                            <input type="email" placeholder="Email"><br>
-                            <textarea placeholder="Write your message here..."></textarea><br>
-                            <input type="button" class="submit-button" value="SEND">
+                            <input type="text" id="form-name" placeholder="Name"><br>
+                            <input type="email" id="form-email" placeholder="Email"><br>
+                            <textarea id="form-msg" placeholder="Write your message here..."></textarea><br>
+                            <input type="button" class="submit-button" value="SEND"
+                             onclick="send_response()">
                         </form>
                     </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div id="response-output" class="col-10"></div>
                 </div>
             </div>
         </div>
