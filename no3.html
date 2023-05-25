@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 3 Pertemuan 11 PPW1</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>ITEMS YOU CONSUME DAILY</h2>
+    <p>Please enter the quantity for <b>each day:</b></p>
+    <table>
+        <thead>
+            <tr>
+                <th>&nbsp</th>
+                <th>DAY</th>
+                <th>YEAR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="item1">
+                <td>Plastic Bottles</td>
+                <td><input type="number" oninput="calculateItems('item1')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item2">
+                <td>Plastic Cups</td>
+                <td><input type="number" oninput="calculateItems('item2')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item3">
+                <td>Straws</td>
+                <td><input type="number" oninput="calculateItems('item3')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item4">
+                <td>Cotton Swabs</td>
+                <td><input type="number" oninput="calculateItems('item4')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item5">
+                <td>Cigarrete Butts</td>
+                <td><input type="number" oninput="calculateItems('item5')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item6">
+                <td>Plastic Resealable Bags</td>
+                <td><input type="number" oninput="calculateItems('item6')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item7">
+                <td>Plastic Cling Wrap</td>
+                <td><input type="number" oninput="calculateItems('item7')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item8">
+                <td>Plastic Silverware</td>
+                <td><input type="number" oninput="calculateItems('item8')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item9">
+                <td>Plastic Stirrers</td>
+                <td><input type="number" oninput="calculateItems('item9')"></td>
+                <td><span></span></td>
+            </tr>
+            <tr id="item10">
+                <td>Food Containers</td>
+                <td><input type="number" oninput="calculateItems('item10')"></td>
+                <td><span></span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><p><b>Current Yearly Consumption</b></p></td>
+                <td><p><b><span id="result">0</span></b></p></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p></p>
+</body>
+</html>

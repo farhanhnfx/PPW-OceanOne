@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 1 Pertemuan 11 PPW1</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Hasil pembandingan dua bilangan</h3>
+    <p id="result"></p>
+    <script>
+        var bil1 = prompt("Masukkan bilangan pertama!");
+        var bil2 = prompt("Masukkan bilangan kedua!");
+        var res = document.getElementById('result');
+        if (bil1 > bil2) {
+            res.innerHTML = "Bilangan 1 lebih besar dari bilangan 2";
+        }
+        else if (bil1 < bil2) {
+            res.innerHTML = "Bilangan 1 lebih kecil dari bilangan 2";
+        }
+        else {
+            res.innerHTML = "Bilangan 1 sama dengan bilangan 2";
+        }
+    </script>
+    
+</body>
+</html>

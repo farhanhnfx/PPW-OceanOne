@@ -1,0 +1,58 @@
+body {
+    background-color:#F6F8F9;
+    padding: 30px 15px;
+    text-align: center;
+}
+@font-face {
+    font-family: poppins;
+    src: url(assets/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: firasans;
+    src: url(assets/FiraSans-Regular.ttf);
+}
+@font-face {
+    font-family: firasans-semibold;
+    src: url(assets/FiraSans-SemiBold.ttf);
+}
+h2 {
+    color: coral;
+    font-family: firasans-semibold;
+    font-size: 28px;
+    margin-bottom: -10px;
+    padding: 0;
+}
+p {
+    font-size: 20px;
+    font-family: poppins;
+    /* font-weight: bold; */
+    color: #03256c;
+}
+table {
+    margin: auto;
+    font-family: poppins;
+    color: #03256c;
+    font-weight: bolder;
+}
+table th {
+    color: #747474;
+    font-size: 14px;
+}
+table input {
+    width: 40px;
+    font-family: poppins;
+    padding: 3px 7px;
+    border: 1px solid #03246c37;
+    color: #03256c;
+}
+table td {
+    text-align: left;
+    padding: 5px 15px;
+    min-width: 60px;
+}
+span#result {
+    color: coral;
+    /* font-weight: bolder; */
+    font-family: firasans-semibold;
+    font-size: 25px;
+}

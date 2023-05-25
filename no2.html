@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 2 Pertemuan 11 PPW1</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            padding: 40px;
+        }
+        h5 {
+            font-weight: bold;
+        }
+        /* table {
+            padding: 10px 50px;
+        } */
+    </style>
+</head>
+<body>
+    <h5>Praktikan PPW 1?</h5>
+    <div id="result"></div>
+    <script>
+        var res = document.getElementById('result');
+        var isPraktikan = confirm('Apakah Anda praktikan PPW 1?');
+        if (!isPraktikan) {
+            res.innerHTML = "Anda bukan praktikan PPW1, Anda tidak boleh masuk!";
+        }
+        else {
+            var table = document.createElement("table");
+            var nama = prompt("Masukkan nama Anda");
+            var nim = prompt("Masukkan NIM Anda");
+            var angk = prompt("Angkatan?");
+            table.className = "table table-bordered table-hover table-sm";
+            table.innerHTML = "<thead class='table-dark'><tr><th scope='col'>Nama</th><th scope='col'>NIM</th><th scope='col'>Angkatan</th></tr></thead>";
+            table.innerHTML += "<tbody><tr><td>" + nama + "</td><td>" + nim + "</td><td>" + angk + "</td></tbody>";
+            res.append(table);
+        }
+    </script>
+</body>
+</html>
