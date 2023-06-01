@@ -65,34 +65,38 @@
                     </div>
                     <div class="row">
                         <div class="second-section-wrapper">
-                        <!-- 1 -->
-                            <div class="second-section-content">
-                                <h3>ALIGN</h3>
-                                <p id="s2-align-content">66% of people (73% of Millennials) are willing to pay more for products and 
-                                    services from companies committed to positive social and environmental impact.
-                                </p>
-                                <!-- <textarea rows="0" cols="0"></textarea> -->
-                                <button class="normal-button">LEARN MORE</button>
-                                <a style="color: yellow;" onclick="edit_content()">
+                        <?php
+                            include("koneksi.php");
+                            $content1 = mysqli_query($conn, "select * from section_two where id = 'se2004'");
+                            $content1 = mysqli_fetch_assoc($content1);
+                            $content2 = mysqli_fetch_assoc(mysqli_query($conn, "select * from section_two where id = 'se2005'"));
+                            $content3 = mysqli_fetch_assoc(mysqli_query($conn, "select * from section_two where id = 'se2006'"));
+                            echo "
+                            <!-- 1 -->
+                            <div class='second-section-content'>
+                                <h3>".$content1['subtitle']."</h3>
+                                <p id='s2-align-content'>". $content1['content'] ."</p>
+                                <button class='normal-button'>" . $content1['btn_text'] . "</button>
+                                <a style='color: yellow;' onclick='edit_content()'>
                                     EDIT
                                 </a>
                             </div>
-                        <!-- 2 -->
-                            <div class="second-section-content">
-                                <h3>KICKSTART</h3>
-                                <p id="s2-kickstart-content">Ocean One are a turnkey solution to begin the journey of reducing your business’s 
-                                    environmental footprint or going plastic neutral.</p>
-                                <button class="normal-button">START ACTION</button>
+
+                            <!-- 2 -->
+                            <div class='second-section-content'>
+                                <h3>". $content2['subtitle'] ."</h3>
+                                <p id='s2-kickstart-content'>". $content2['content'] ."</p>
+                                <button class='normal-button'>". $content2['btn_text'] ."</button>
                             </div>
-                        <!-- 3 -->
-                            <div class="second-section-content">
-                                <h3>AMPLIFY</h3>
-                                <p>Is your actions already making strides in its commitment to sustainability? 
-                                    Measure your action success using IMPACT</p>
-                                <button class="normal-button">SEE HOW</button>
+
+                            <!-- 3 -->
+                            <div class='second-section-content'>
+                                <h3>". $content3['subtitle'] ."</h3>
+                                <p>". $content3['content'] ."</p>
+                                <button class='normal-button'>". $content3['btn_text'] ."</button>
                             </div>
-                            <script>
-                            </script>
+                            ";
+                        ?>
                         </div>
                     </div>
                 </div>
